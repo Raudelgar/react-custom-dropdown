@@ -1,0 +1,120 @@
+.dropdown{
+  width: 300px;
+  height: 50px;
+  margin: 20px auto;
+  background-color: transparent;
+  padding: 10px;
+  border: 1px solid #a7a7a7;
+  border-radius: 0.2em;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  position: relative;
+  align-items: center;
+
+  .dropwdown-btn-label{
+    padding: 0;
+    line-height: 1rem;
+    background-color: transparent;
+    color: #a7a7a7;
+    letter-spacing: 0.15em;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    span{
+      text-transform: capitalize;
+    }
+
+    .select{
+      display: inline-block;
+      color: #fffefe;
+    }
+
+    .dropdown-label{
+      position: absolute;
+      top: -10px;
+      padding: 2px 4px;
+      background-color: #333;
+      font-size: 0.7rem;
+      color: inherit;
+      transition: color 200ms cubic-bezier(0, 0, 0.2, 1) 0ms, 
+        transform 200ms cubic-bezier(0,0,0.2,1) 0ms;
+    }
+  }
+
+  .dropdown-btn-circle{
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: center;
+    text-decoration: none;
+    background-color: transparent;
+    flex: 0 0 auto;
+    color: #a7a7a7;
+    overflow: visible;
+    font-size: 2rem;
+    text-align: center;
+    transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: -2px;
+    border: none;
+    outline: none;
+
+    .dropdown-circle{
+      width: 100%;
+      display: flex;
+      align-items: inherit;
+      justify-content: inherit;
+
+      .dropdown-arrow{
+        overflow: hidden;
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+
+  .dropdown-btn-circle:hover{
+    background-color: #535353;
+    color: #fffefe;
+  }
+
+  ul{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    position: absolute;
+  }
+
+  li{
+    list-style-type: none;
+  }
+
+  .dropdown-content{
+    color: #fffefe;
+    height: auto;
+    margin: 0;
+    background-color: #111111;
+    top: 75px;
+    border-radius: 0.2em;
+    width: 325px;
+    padding-left: -10px;
+    left: -1px;
+  }
+
+  .dropdown-item{
+    font-size: 1rem;
+    text-transform: capitalize;
+    padding: 11px;
+    letter-spacing: 0.15em;
+    border-radius: 0.2em
+  }
+
+  .dropdown-item:hover{
+    background-color: #535353;
+  }
+}
